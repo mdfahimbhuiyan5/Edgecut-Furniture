@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated CSP Policy -->
     <meta http-equiv="Content-Security-Policy" 
-      content="script-src 'self' 'unsafe-eval';
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline' https://ajax.googleapis.com; 
                style-src 'self' 'unsafe-inline';
-               img-src 'self' data: https://*;
+               img-src 'self' data: https:;
                font-src 'self' data:;
                connect-src 'self';
                object-src 'none';
                base-uri 'self';
                form-action 'self';
-               frame-ancestors 'none';">
+               frame-ancestors 'none'">
     <title>Edgecut - Furniture</title>
     <link rel="stylesheet" href="style.css">
 </head>
